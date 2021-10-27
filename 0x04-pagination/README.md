@@ -1,6 +1,6 @@
-## 0x04. Pagination
+# 0x04. Pagination
 
-# Introductory project on:
+## Introductory project on:
 
 * How to paginate a dataset with simple page and page_size parameters
 * How to paginate a dataset with hypermedia metadata
