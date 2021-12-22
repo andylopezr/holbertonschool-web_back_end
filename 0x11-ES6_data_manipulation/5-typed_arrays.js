@@ -1,10 +1,9 @@
-const x = (length, position, value) => {
-  /*eslint-disable */
-  (position > length - 1) && ((function n() { throw Error('Position outside range'); }()));
-  const buffer = new Array(length);
-  const view = new DataView(buffer, 0);
-  view.setInt8(position, value);
+export default function createInt8TypedArray(length, position, value) {
+  if (position >= length) {
+    throw new Error('Position outside range');
+  }
+  const a = new ArrayBuffer(length);
+  const view = new DataView(a);
+  view.setUint8(position, value);
   return view;
-};
-
-export default x;
+}
