@@ -1,1 +1,3 @@
-# holbertonschool-web_back_end
+# 0x07. Session authentication
+
+* Implementation of a Session Authentication
